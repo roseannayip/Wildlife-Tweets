@@ -1,0 +1,269 @@
+body, html {
+    font-family: 'Playfair Display', sans-serif;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: #F2F1EB;
+}
+
+a {
+    color: #2C505C;
+}
+
+ul {
+  list-style-type:square;
+}
+
+ul, ol {
+  padding-bottom: 40px;
+}
+
+li, p {
+    font-weight: lighter;
+}
+
+ol {
+  margin-left: 10px;
+}
+
+p {
+    margin-left: 30px;
+}
+
+#map {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -3;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    z-index: 3;
+    background: #000000;
+    background-blend-mode: overlay;
+    padding: 35px;
+    text-align: left;
+    opacity: 80%;
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;
+}
+
+.tabBar {
+    height: 50px;
+    position: relative;
+    font-family: 'Playfair Display', sans-serif;
+    padding: 2px;
+    border-radius: 2%;
+    opacity: 0.9;
+    margin-left: 5px;
+}
+
+.scroll {
+    width: 60vw;
+    height: 40vh;
+    overflow: auto;
+    padding: 10px;
+}
+
+.tabButton {
+    font-family: 'Playfair Display SC', serif;
+    size: 0vmax;
+    border:none;
+    outline:none;
+    position: relative;
+    background-color: black;
+    color: white;
+    fill: black;
+    font-style: bold;
+    opacity: 1;
+    border-radius: 2px;
+    margin-left: 2px;
+    padding: 5px;
+    align-items: center;
+    margin-left: 0;
+}
+
+.tabButton:hover {
+    cursor: pointer;
+    color: wheat;
+    background-color: #394053;
+}
+
+.text {
+    font-size: 14pt;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+#intro {
+    color: #F2F1EB;
+    size: smaller;
+    font-family: 'Playfair Display', sans-serif;
+    position: relative;
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30pt;
+    font-weight: lighter;
+    kerning: 3mm;
+    color: #E6EBD8;
+    text-align: left;
+    text-decoration: rgba(0, 0, 0, 0.25);
+    text-decoration-style: dotted;
+}
+
+h3 {
+  margin-left: 30px;
+}
+
+#footer {
+    width: 100%;
+    height: 25%;
+    font-size: 10pt;
+    font-weight: lighter;
+}
+
+/* styling for the tweet box */
+.tweetBox {
+/* !changing this position att breaks the mouseover. be careful! */
+  position: absolute; 
+  font-family: 'Playfair Display', 'open sans';
+  margin-bottom: 5vh;
+  margin-top: 65vh;
+  margin-left: 30%;
+  width: 65vw;
+  padding: 5px;
+  /* align-items: center; */
+  border-radius: 3px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f2f1eb;
+  z-index: 1;
+  opacity: 80%;
+  text-indent: none;
+}
+
+.tweetBox {
+    display: flex;
+}
+
+#leftTBcolumn {
+    width: 70%;
+}
+
+#tweet, #date {
+    font-family: 'Arial', 'sans serif';
+    font-weight: lighter;
+    color: black;
+    font-style: normal;
+    float: top;
+    /* text-indent: 50px; */
+
+}
+
+#tweet_media {
+    height: 200px;
+    float: right;
+    margin: 5px;
+    max-width: 400px;
+}
+
+#process {
+    padding: 20px;
+    margin-left: 30%;
+    display: none;
+    display: flexbox;
+    background-color: #F2F1EB;
+}
+
+pre code {
+    background-color: transparent;
+    border-radius: 2px;
+    /* border: 1px solid #999; */
+    padding-left: 2px;
+    display: block;
+    width: 95%;
+    margin: 1em;
+    white-space: pre-wrap;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.prettyprint {
+    /* background-color: #A1BEC9; */
+    margin: 1px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#chart {
+    position: absolute;
+    border-radius: 4px;
+    padding: 20px;
+    align-items: left;
+    margin-left: 30%;
+    display: none;
+}
+
+/* styling for the language menu */
+#menu {
+    background: #b9b6bd;
+    opacity: 80%;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    right: 10px;
+    border-radius: 3px;
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: 'Playfair Display SC', serif;
+    color: Black;
+}
+
+#chartStack {
+    display: block;
+    text-align: justify;
+    /* position: sticky; */
+}
+
+#chart1Container {
+    align-items: center;
+}
+
+#menu a {
+    font-size: 13px;
+    color: black;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#menu a:last-child {
+    border: none;
+}
+
+#menu a:hover {
+    background-color: white;
+    color: #000000;
+}
+
+#menu a.active {
+    background-color: #e6ebd8;
+    color: #000000;
+}
+
+#menu a.active:hover {
+    background: #394053;
+    color: #f2f1eb;
+}
